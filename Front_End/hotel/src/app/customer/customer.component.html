@@ -1,0 +1,54 @@
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Reception_Works</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link"routerLink="addcustomer"> Add Customer</a>
+          </li>
+      </ul>
+      
+    </div>
+  </nav>
+  
+  <router-outlet></router-outlet>
+  <br><br><br><br>
+  
+  <h1>Customer Details...</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Adults</th>
+        <th scope="col">Childs</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Number Of Days</th>
+        
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+     <tr *ngFor="let customer of collection">
+       <td>{{customer.id}}</td>
+       <td>{{customer.name}}</td>
+       <td>{{customer.email}}</td>
+       <td>{{customer.adults}}</td>
+       <td>{{customer.childs}}</td>
+       <td>{{customer.mobile}}</td>
+       <td>{{customer.days}}</td>
+       
+       <td>  <a><i class="fa fa-edit" style="font: size 50px;color:red"></i>
+       </a>&nbsp;  <i class="fa fa-trash-o" style="font-size:20px;color:red"></i></td>
+     </tr>
+    </tbody>
+  </table>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>
+  <br><br><br>

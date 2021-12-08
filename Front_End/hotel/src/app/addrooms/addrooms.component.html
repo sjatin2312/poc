@@ -1,0 +1,51 @@
+
+<div class="jumbotron" >
+    <h1 id="title">Add Rooms...</h1>
+</div>
+
+<br><br>
+
+
+
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Success !</strong>Your data added Succesfully !.
+    <button (click)="closeAlert()" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  
+<form [formGroup]="addRooms" (ngSubmit)="createResto()">
+    <div class="form-group">
+      <label >ID</label>
+      <input type="number" class="form-control" placeholder="Room ID" formControlName="id">
+    </div>
+    <div class="form-group">
+        <label >Avalible</label>
+        <input type="text" class="form-control" placeholder=" Room is Avalible"
+        formControlName="ava">
+      </div>
+      <div class="form-group">
+        <label >Clean</label>
+        <input type="text" class="form-control" placeholder=" Room is Clean "
+        formControlName="clean">
+      </div>
+     
+      <div class="form-group">
+        <label >Beds</label>
+        <input type="text" class="form-control" placeholder="Single or Double"
+        formControlName="beds">
+      </div>
+      <div class="form-group">
+        <label >Room Type</label>
+        <input type="text" class="form-control" placeholder="AC or Non-AC"
+        formControlName="type">
+      </div>
+      <div class="form-group">
+        <label >Price</label>
+        <input type="number" class="form-control" placeholder="Price"
+        formControlName="price">
+      </div>
+     
+      <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <router-outlet></router-outlet>

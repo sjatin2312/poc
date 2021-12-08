@@ -1,0 +1,55 @@
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Manager_Works</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+          <a class="nav-link"routerLink="addrooms"> Add Rooms</a>
+        </li>
+    </ul>
+    
+  </div>
+</nav>
+
+<br>
+
+<router-outlet></router-outlet>
+
+<br><br><br>
+
+<h1>Rooms Details...</h1>
+<br><br>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Avalible</th>
+      <th scope="col">Clean</th>
+      <th scope="col">Beds</th>
+      <th scope="col">Type</th>
+      <th scope="col">Price</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+   <tr *ngFor="let rooms of collection">
+     <td>{{rooms.id}}</td>
+     <td>{{rooms.ava}}</td>
+     <td>{{rooms.clean}}</td>
+     <td>{{rooms.beds}}</td>
+     <td>{{rooms.type}}</td>
+     <td>{{rooms.price}}</td>
+ 
+     <td>  <a><i class="fa fa-edit" style="font: size 50px;color:red"></i>
+     </a>&nbsp;  <i class="fa fa-trash-o" style="font-size:20px;color:red"></i></td>
+   </tr>
+  </tbody>
+</table>
+
+
+<br><br><br>
+<br><br><br>

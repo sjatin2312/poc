@@ -1,0 +1,27 @@
+server:
+  port: 9004
+
+spring:
+  application:
+    name: manager
+
+
+zuul:
+  routes:
+    rooms_service:
+      url: http://localhost:9002
+    employee_service:
+      url: http://localhost:9003
+
+
+
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost

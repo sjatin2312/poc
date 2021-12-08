@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Back_end.iml" filepath="$PROJECT_DIR$/.idea/Back_end.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer_service/customer_service.iml" filepath="$PROJECT_DIR$/customer_service/customer_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/e_service/e_service.iml" filepath="$PROJECT_DIR$/e_service/e_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/employee_service/employee_service.iml" filepath="$PROJECT_DIR$/employee_service/employee_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hotelapigateway/hotelapigateway.iml" filepath="$PROJECT_DIR$/hotelapigateway/hotelapigateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/manager/manager.iml" filepath="$PROJECT_DIR$/manager/manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/receptionist/receptionist.iml" filepath="$PROJECT_DIR$/receptionist/receptionist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rooms_service/rooms_service.iml" filepath="$PROJECT_DIR$/rooms_service/rooms_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security_service/security_service.iml" filepath="$PROJECT_DIR$/security_service/security_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-paytm-payment-master/spring-boot-paytm-payment.iml" filepath="$PROJECT_DIR$/spring-boot-paytm-payment-master/spring-boot-paytm-payment.iml" />
+    </modules>
+  </component>
+</project>

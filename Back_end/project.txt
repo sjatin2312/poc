@@ -1,0 +1,26 @@
+Online Hotel Management System Project
+
+Micro-Services Used:
+* customer_service.
+   *Deals with customers/guests Management.
+
+*e_service Used:
+   *Creates Eureka Server for Application to run on.
+
+*employee_service Used:
+    *Deals with employees of hotels.
+
+*hotelapigateway Used:
+   *Builds Api-Gateway for our Application to acess.
+
+*manager Used:
+   *Manager configuration.
+
+*receptionist Used:
+   *receptionist configuration.
+
+*rooms_service Used:
+   *Deals with room Management.
+
+*security_service Used:
+   *Deals with Security.
